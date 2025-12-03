@@ -8,6 +8,7 @@ export type User = {
 export type RegisterRequest = {
   name: string;
   email: string;
+  phoneNumber: string;
   password: string;
 };
 

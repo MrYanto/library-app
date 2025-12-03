@@ -4,7 +4,7 @@ import apiInstance from '@/api';
 export const authService = {
   register: async (request: RegisterRequest): Promise<RegisterResponse> => {
     const { data } = await apiInstance.post<RegisterResponse>(
-      '/api/auth/register',
+      '/auth/register',
       request
     );
     return data;
